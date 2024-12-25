@@ -2,7 +2,7 @@ body {
     margin: 0;
     height: 100vh;
     padding: 0;
-    color: rgb(255, 208, 0);
+    color: rgb(255, 157, 0);
     background-color: black;
     background-image: url('../images/bgr.png');
     background-size: cover;
@@ -35,7 +35,7 @@ header {
     text-align: center;
     cursor: pointer;
     width: 200px;
-    color: rgb(255, 183, 0);
+    color: rgb(255, 166, 0);
     transition: color 0.1s;
 }
 .pagechinh:hover {
@@ -54,7 +54,7 @@ main {
     text-align: center;
     height: 280px;
     width: 300px;
-    background-color: rgb(255, 252, 78);
+    background-color: rgb(255, 253, 145);
 }
 .sanpham img{
     border-radius: 5px;
@@ -62,20 +62,18 @@ main {
     height: 200px;
     margin: 10px;
 }
-.themhang {
-    border-radius: 4px;
-    padding: 0.3rem 1rem;
-}
-
 /* phần thông tin liên hệ ở cuối trang */
 footer {
     background-color: rgb(255, 234, 0);
-    height: 200px;
+    height: 250px;
+    margin-top: 70px;
+    display: grid;
+    justify-content: center;
 }
 .contact {
+    width: 1000px;
     display: flex;
     color: rgb(0, 0, 0);
-    margin-left: 20%;
 }
 
 /* ảnh ở phần giới thiệu */
@@ -266,7 +264,6 @@ footer {
     color: #4CAF50;
     text-decoration: none;
 }
-
 .switch-link a:hover {
     text-decoration: underline;
 }

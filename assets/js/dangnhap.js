@@ -18,3 +18,26 @@ const user = {
 };
 
 localStorage.setItem('user', JSON.stringify(user));
+document.getElementById('nextBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalImages;
+    showImage(currentIndex);
+});
+
+document.getElementById('prevBtn').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages; 
+    showImage(currentIndex);
+});
+showImage(currentIndex);
+
+function scrollToTarget(targetId) {
+    document.getElementById(targetId).scrollIntoView({behavior: "smooth"});
+}
+function Togioithieu() {
+    window.location.href = 'index.html#target2';
+}
+function Tosanpham() {
+    window.location.href = 'index.html#target3';
+}
+function Tolienhe() {
+    window.location.href = 'index.html#target4';
+}
