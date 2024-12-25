@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>giới thiệu</title>
+</head>
+<body>
+    <header>
+        <div onclick="window.location.href='index.html'"><img src="assets/images/humg-logo.png" class="logo"></div>
+        <div onclick="window.location.href='index.html'" class="pagechinh">Trang chủ</div>
+        <div onclick="Togioithieu()" class="pagechinh" class="pagechinh">Giới thiệu</div>
+        <div onclick="Tosanpham()" class="pagechinh">Sản phẩm</div>
+        <div onclick="Tolienhe()" class="pagechinh">Liên hệ</div>
+        <div onclick="window.location.href='giohang.html'" class="pagechinh">giỏ hàng</div>
+        <div onclick="window.location.href='login.html';" class="pagechinh">Đăng nhập</div>
+    </header>
+
+    <main>
+        <div class="sanpham2">
+            <div class="imgsanpham">
+                <tr>
+                    <td><img src="assets/images/mat-ong-rung-1.jpg"></td>
+                    <td><img src="assets/images/mat-ong-rung-2.jpg"></td>
+                </tr>
+                <tr>
+                    <td><img src="assets/images/mat-ong-rung-3.jpg"></td>
+                    <td><img src="assets/images/mat-ong-rung-4.jpg"></td>
+                </tr>
+            </div>
+            <div class="mota">
+                <h1 style="margin: 0;">Mật ong Tây Bắc</h1>
+                <p style="text-align: left;">Là tinh hoa thiên nhiên của vùng núi Tây Bắc,
+                     mật ong Tây Bắc nổi tiếng với hương vị thơm ngon, đậm đà và giàu dưỡng chất
+                    . Được tạo nên từ hoa rừng tự nhiên, sản phẩm mang trong mình nét hoang dã và tinh túy của vùng đất nguyên sơ.
+                </p>
+                <p style="text-align: left;">Thành phần: 100% mật ong tự nhiên không chất bảo quản</p>
+                <p style="text-align: left;">công dụng: làm nguyên liệu cho các món ăn và nước uống, trị ho, trị loét chân do tiểu đường, giảm khô mắt.</p>
+                <h4 style="margin: 20px;">Giá: 500k</h4>
+                <button onclick="addProductToCart({name: 'Mật ong tây bắc', price: 500 })">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </main>
+    <footer style="margin-top: 70px">
+        <div class="contact">
+            <div>
+                <h2>CONTACT</h2>
+                <p>Facebook: <a href="https://www.facebook.com/manh.uc.273999/">Mạnh Đức</a></p>
+                <p>Phone: <u>0387269020</u></p>
+                <p>Email: <u style="margin:0;">manhduc123@gmail.com</u></p>
+            </div>
+            <div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/sanpham.js"></script>
+</body>
+</html>

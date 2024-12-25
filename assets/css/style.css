@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    color: rgb(255, 208, 0);
+    background-color: black;
+    background-image: url('../images/bgr.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* phần header */
+.logo {
+    margin-top: 5px;
+    width: 60px;
+    cursor: pointer;
+}
+header {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 252, 78);
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* phần main chính */
+.pagechinh {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    color: rgb(255, 183, 0);
+    transition: color 0.1s;
+}
+.pagechinh:hover {
+    color: rgb(255, 255, 255);
+}
+main {
+    min-height: 90vh;
+    padding-top: 50px;
+    display: grid;
+    justify-content: center;
+}
+.sanpham {
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    height: 280px;
+    width: 300px;
+    background-color: rgb(255, 252, 78);
+}
+.sanpham img{
+    border-radius: 5px;
+    width: 278px;
+    height: 200px;
+    margin: 10px;
+}
+.themhang {
+    border-radius: 4px;
+    padding: 0.3rem 1rem;
+}
+
+/* phần thông tin liên hệ ở cuối trang */
+footer {
+    background-color: rgb(255, 234, 0);
+    height: 200px;
+}
+.contact {
+    display: flex;
+    color: rgb(0, 0, 0);
+    margin-left: 20%;
+}
+
+/* ảnh ở phần giới thiệu */
+.slider-container {
+    position: relative;
+    width: auto;
+    height: 580px;
+    overflow: hidden;
+    margin: auto;
+}
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 1000px;
+}
+.slider img {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+.slider img.active {
+    display: block;
+}
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+} 
+#prevBtn {
+    left: 10px;
+}
+  
+#nextBtn {
+    right: 10px;
+}
+
+/* phần trang sản phẩm */
+.sanpham2 {
+    border-radius: 20px;
+    height: 600px;
+    display:flex;
+    background-color: #fcffad;
+    width: 1200px;
+    justify-items: center;
+    align-items: center;
+}
+.imgsanpham{
+    margin: 30px;
+    width: 800px;
+}
+.imgsanpham img {
+    width: 49%;
+    height: 250px;
+}
+.mota {
+    width: 300px;
+    text-align: center;
+}
+.mota button {
+    font-weight: bold;
+    color: yellow;
+    background-color: black;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* phần giỏ hàng */
+.giohang {
+    width: 500px;
+    display: grid;
+    max-height: 50vh;
+    text-align:center;
+}
+#cart-list {
+    list-style-type: none;
+    padding: 0;
+}
+#cart-list li {
+    font-weight: bolder;
+    color:black;
+    background-color: #ffe600;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cart-list button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#cart-list button:hover {
+    background-color: darkred;
+}
+
+/* phần thanh toán */
+.thanhtoan {
+    margin-left: 40px;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.login-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.login-modal img {
+    width: 300px;
+    border-radius: 10px;
+}
+.done {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 125px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.close-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 135px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* phần đăng nhập nhập */
+.container {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+.container input[type="password"],
+.container input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.switch-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.switch-link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+}
+.login {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 91%;
+    margin: 0;
+}

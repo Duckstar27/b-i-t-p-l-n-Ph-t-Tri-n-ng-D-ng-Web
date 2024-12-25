@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>giới thiệu</title>
+</head>
+<body>
+    <header>
+        <div onclick="window.location.href='index.html'"><img src="assets/images/humg-logo.png" class="logo"></div>
+        <div onclick="window.location.href='index.html'" class="pagechinh">Trang chủ</div>
+        <div onclick="Togioithieu()" class="pagechinh" class="pagechinh">Giới thiệu</div>
+        <div onclick="Tosanpham()" class="pagechinh">Sản phẩm</div>
+        <div onclick="Tolienhe()" class="pagechinh">Liên hệ</div>
+        <div onclick="window.location.href='giohang.html'" class="pagechinh">giỏ hàng</div>
+        <div onclick="window.location.href='login.html';" class="pagechinh">Đăng nhập</div>
+    </header>
+
+    <main>
+        <div class="giohang">
+            <h2>Giỏ Hàng</h2>
+            <p id="cart-list" class="sp-in-gh"></p>
+            <div id="total-price">
+                <strong>Tổng giá: <span id="total">0$</span></strong>
+                <button class="thanhtoan" onclick="openqr()">Thanh toán</button>
+            </div>
+        </div>
+        
+        <div class="login-modal" id="Modal">
+            <button class="close-btn" onclick="closeqr()">Đóng</button>
+            <H2 style="text-align: center;">Quét QR để thanh toán</H2>
+            <img src="assets/images/QR.jpg">
+            <button class="done" onclick="closeqr()">Đã xong</button>
+        </div>
+    </main>
+    
+    <footer id="target4" style="margin-top: 70px">
+        <div class="contact">
+            <div>
+                <h2>CONTACT</h2>
+                <p>Facebook: <a href="https://www.facebook.com/manh.uc.273999/">Mạnh Đức</a></p>
+                <p>Phone: <u>0387269020</u></p>
+                <p>Email: <u style="margin:0;">manhduc123@gmail.com</u></p>
+            </div>
+            <div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/giohang.js"></script>
+</body>
+</html>

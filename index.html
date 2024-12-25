@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>trang chủ</title>
+</head>
+<body>
+    <header>
+        <div onclick="window.location.href='index.html'"><img src="assets/images/humg-logo.png" class="logo"></div>
+        <div onclick="window.location.href='index.html'" class="pagechinh">Trang chủ</div>
+        <div onclick="scrollToTarget('target2')" class="pagechinh">Giới thiệu</div>
+        <div onclick="scrollToTarget('target3')" class="pagechinh">Sản phẩm</div>
+        <div onclick="scrollToTarget('target4')" class="pagechinh">Liên hệ</div>
+        <div onclick="window.location.href='giohang.html'" class="pagechinh">giỏ hàng</div>
+        <div onclick="window.location.href='login.html';" class="pagechinh">Đăng nhập</div>
+    </header>
+    <main>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="assets/images/mat-ong-rung-2.jpg" class="active">
+                <img src="assets/images/mat-hoa-ca-phe-2.jpg">
+                <img src="assets/images/mat-mia-2.jpg">
+                <img src="assets/images/mat-mia-3.jpg">
+                <img src="assets/images/mat-ong-rung-1.jpg">
+                <img src="assets/images/mat-hoa-ca-phe-3.jpg">
+            </div>
+            <button id="prevBtn" class="slider-button">❮</button>
+            <button id="nextBtn" class="slider-button">❯</button>
+        </div>
+        <div id="target2">
+            <h1 style="text-align: center;">Giới thiệu</h1>
+            <div style="width:1000px; font-size: 20px;">
+                <p>
+                    Mật là món quà tuyệt vời mà thiên nhiên ban tặng, được con người khai thác và sử dụng từ hàng ngàn năm qua.
+                    Được biết đến với hương vị ngọt ngào và giá trị dinh dưỡng cao, mật không chỉ là thực phẩm bổ sung năng lượng
+                    mà còn là nguyên liệu quý trong chế biến ẩm thực và chăm sóc sức khỏe.
+                </p>
+                <p>
+                    Mật ong là loại mật phổ biến nhất, được ong tạo ra từ mật hoa tự nhiên. Với thành phần giàu vitamin, khoáng
+                    chất, và các chất chống oxy hóa, mật ong được xem như một "thần dược" tự nhiên hỗ trợ tăng cường hệ miễn dịch,
+                    làm đẹp da, và chữa lành vết thương. Không chỉ vậy, hương vị ngọt thanh và hương thơm đặc trưng của mật ong
+                    còn làm tăng thêm sự hấp dẫn cho các món ăn và thức uống.
+                </p>
+                <p>
+                    Bên cạnh mật ong, mật mía – sản phẩm truyền thống từ nước mía nguyên chất – cũng rất được ưa chuộng. Mật mía
+                    mang vị ngọt đậm đà, màu sắc nâu sẫm đặc trưng và thường được sử dụng trong các món ăn dân dã hoặc làm nước
+                    chấm, bánh trái. Mật mía không chỉ cung cấp năng lượng mà còn giữ được một số dưỡng chất từ cây mía, mang lại
+                    giá trị dinh dưỡng đáng kể.
+                </p>
+                <p>
+                    Các loại mật khác, như mật từ cây thốt nốt hay mật từ một số loài hoa rừng, cũng có những đặc trưng riêng
+                    biệt về hương vị và giá trị. Điểm chung của các loại mật này là sự tự nhiên, lành tính và khả năng ứng dụng đa
+                    dạng trong đời sống hàng ngày, từ làm đẹp, chăm sóc sức khỏe đến ẩm thực. Với sự phong phú về chủng loại và
+                    nguồn gốc, mật đã trở thành một phần không thể thiếu trong văn hóa và đời sống của con người, mang đến sự ngọt
+                    ngào, bổ dưỡng và gần gũi với thiên nhiên.
+                </p>
+            </div>
+        </div>
+        <div id="target3">
+            <hr>
+            <h1 style="text-align: center;">Sản phẩm</h1>
+            <p style="text-align: center; font-size: 20px;"> Dưới đây là một số sản phẩm mật tự nhiên mà chúng tôi cung cấp</p>
+                <div style="display: flex; flex-wrap: wrap;">
+                    <div class="sanpham" onclick="window.location.href='sanpham1.html'">
+                        <img src="assets/images/mat-ong-rung-1.jpg"> 
+                        <h3 style="margin: 0;">Mật ong tây bắc</h3>
+                        <p style="margin: 0;">Giá: 500k</p>
+                    </div> 
+                    <div class="sanpham" onclick="window.location.href='sanpham2.html'">
+                        <img src="assets/images/mat-hoa-ca-phe-1.jpg"> 
+                        <h3 style="margin: 0;">Mật ong nuôi</h3>
+                        <p style="margin: 0;">Giá: 700k</p>
+                    </div>
+                    <div class="sanpham" onclick="window.location.href='sanpham3.html'">
+                        <img src="assets/images/mat-mia-1.jpg"> 
+                        <h3 style="margin: 0;">Mật nhân tạo</h3>
+                        <p style="margin: 0;">Giá: 300k</p>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <footer id="target4" style="margin-top: 70px">
+        <div class="contact">
+            <div>
+                <h2>CONTACT</h2>
+                <p>Facebook: <a href="https://www.facebook.com/manh.uc.273999/">Mạnh Đức</a></p>
+                <p>Phone: <u>0387269020</u></p>
+                <p>Email: <u style="margin:0;">manhduc123@gmail.com</u></p>
+            </div>
+            <div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/checkdangnhap.js"></script>
+</body>
+</html>

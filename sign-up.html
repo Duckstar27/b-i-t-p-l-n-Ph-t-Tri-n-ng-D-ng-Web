@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Màn hình Đăng Nhập</title>
+</head>
+<body>
+    <header>
+        <div onclick="window.location.href='index.html'"><img src="assets/images/humg-logo.png" class="logo"></div>
+        <div onclick="window.location.href='index.html'" class="pagechinh">Trang chủ</div>
+        <div onclick="Togioithieu()" class="pagechinh" class="pagechinh">Giới thiệu</div>
+        <div onclick="Tosanpham()" class="pagechinh">Sản phẩm</div>
+        <div onclick="Tolienhe()" class="pagechinh">Liên hệ</div>
+        <div onclick="window.location.href='giohang.html'" class="pagechinh">giỏ hàng</div>
+        <div onclick="window.location.href='login.html';" class="pagechinh">Đăng nhập</div>
+    </header>
+    <div class="login">
+        <div class="container" id="signup-form">
+            <h1>Tạo tài khoản</h1>
+            <form action="#" method="POST">
+                <p style="text-align: left; margin: 0;">Email</p>
+                <input type="email" placeholder="name@gmail.com">
+                <p style="text-align: left; margin: 0;">Mật khẩu</p>
+                <input type="password" placeholder="abcxyz@123">
+                <label>
+                    <input type="checkbox">
+                    đồng ý với điều khoản sử dụng
+                </label>
+                <input type="submit" value="sign up">
+            </form>
+            <div class="switch-link">
+                bạn đã có tài khoản? <a href="login.html" onclick="toggleForm()">Đăng nhập</a>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
